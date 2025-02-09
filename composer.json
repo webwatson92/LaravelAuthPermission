@@ -8,7 +8,11 @@
     "autoload": {
         "psr-4": {
             "webwatson92\\LaravelAuth\\": "src/"
-        }
+        },
+        "files": [
+            "src/routes/web.php",
+            "src/routes/userRolePermission.php"
+        ]
     },
     "require": {
         "php": "^8.2",

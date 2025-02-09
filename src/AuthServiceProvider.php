@@ -20,11 +20,10 @@ class AuthServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        $path = __DIR__ . '/routes/web.php';
-        dd($path);
-
-        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
-
+        $this->loadRoutesFrom(realpath(__DIR__.'/routes/web.php'));
+        if (!file_exists(__DIR__.'/routes/web.php')) {
+            die('Le fichier web.php n\'existe pas');
+        }
         $this->loadViewsFrom(__DIR__.'/resources/views', 'laravelauth');
 
         $this->publishes([
