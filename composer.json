@@ -1,0 +1,28 @@
+{
+    "name": "webwatson92/laravel-auth-with-permission",
+    "description": "Un package d'authentification basé sur Laravel Breeze et Laravel Permission",
+    "author": "OUATTARA EL HADJ YOu_ok.",
+    "version": "1.0.0",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "webwatson92\\LaravelAuth\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "laravel/breeze": "^2.2",
+        "spatie/laravel-permission": "*",
+        "yajra/laravel-datatables-oracle": "^11.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "webwatson92\\LaravelAuth\\AuthServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
