@@ -7,7 +7,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "webwatson92\\LaravelAuth\\": "src/"
+            "webwatson92\\LaravelAuthWithPermission\\": "src/"
         },
         "files": [
             "src/routes/web.php",
@@ -23,7 +23,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "webwatson92\\LaravelAuth\\AuthServiceProvider"
+                "webwatson92\\LaravelAuthWithPermission\\AuthServiceProvider"
             ]
         }
     },

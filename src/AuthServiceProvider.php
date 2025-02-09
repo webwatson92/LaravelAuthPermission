@@ -15,13 +15,12 @@ class AuthServiceProvider extends ServiceProvider
         ]);
 
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
-
-        $this->loadRoutesFrom(__DIR__.'/routes/userRolePermission.php');
     }
 
     public function boot()
     {
         $this->loadRoutesFrom(__DIR__.'/routes/userRolePermission.php');
+
         $webRoutePath = realpath(__DIR__.'/routes/web.php');
         if ($webRoutePath) {
             $this->loadRoutesFrom($webRoutePath);
