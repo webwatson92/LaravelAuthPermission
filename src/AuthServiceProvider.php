@@ -21,6 +21,7 @@ class AuthServiceProvider extends ServiceProvider
 
     public function boot()
     {
+        $this->loadRoutesFrom(__DIR__.'/routes/userRolePermission.php');
         $webRoutePath = realpath(__DIR__.'/routes/web.php');
         if ($webRoutePath) {
             $this->loadRoutesFrom($webRoutePath);
