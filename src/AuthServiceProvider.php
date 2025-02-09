@@ -1,6 +1,7 @@
 <?php
 
-namespace Webwatson92\LaravelAuth;
+namespace Webwatson92\LaravelAuthWithPermission;
+
 
 use Webwatson92\LaravelAuth\Console\InstalllaravelauthCommand;
 use Illuminate\Support\ServiceProvider;

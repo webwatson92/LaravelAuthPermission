@@ -1,6 +1,6 @@
 <?php 
 
-namespace Webwatson92\LaravelAuth\Console;
+namespace Webwatson92\LaravelAuthWithPermission\Console;
 
 use Illuminate\Console\Command;
 
