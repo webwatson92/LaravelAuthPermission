@@ -21,13 +21,6 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->loadRoutesFrom(__DIR__.'/routes/web/userRolePermission.php');
 
-        $webRoutePath = realpath(__DIR__.'/routes/web.php');
-        if ($webRoutePath) {
-            $this->loadRoutesFrom($webRoutePath);
-        } else {
-            Log::error('Le fichier web.php est introuvable....');
-        }
-
         $this->loadViewsFrom(__DIR__.'/resources/views', 'laravelauth');
 
         $this->publishes([
