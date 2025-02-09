@@ -15,12 +15,12 @@ class AuthServiceProvider extends ServiceProvider
         
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
         
-        $this->loadRoutesFrom(__DIR__.'/../routes/userRolePermission.php');
+        $this->loadRoutesFrom(__DIR__.'/routes/userRolePermission.php');
     }
 
     public function boot()
     {
-        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
+        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
 
         $this->loadViewsFrom(__DIR__.'/resources/views', 'laravelauth');
 

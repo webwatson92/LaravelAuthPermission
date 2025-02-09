@@ -9,6 +9,8 @@
 
 - 1- composer require webwatson92/laravel-auth-with-permission
 - 2- php artisan laravelauth:install
+- 3- php artisan vendor:publish --provider="Webwatson92\LaravelAuth\AuthServiceProvider"
+- 4- php artisan migrate
 
 ## Autre installation 
 
@@ -18,6 +20,8 @@
     }
 
 - 2- composer update
+- 3- php artisan vendor:publish --provider="Webwatson92\LaravelAuth\AuthServiceProvider"
+- 4- php artisan migrate
 
 ## Author
 - OUATTARA EL HADJ YOUSSOUF

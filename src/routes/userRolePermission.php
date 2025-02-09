@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\UserRolePermissionController;
-use App\Http\Controllers\UserRolePermissionController2;
 use Illuminate\Support\Facades\Route;
 
 Route::group(['middleware' => ['role:admin']], function () {
